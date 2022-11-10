@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\LORD\Desktop\cl2_maza_maribel\.metadata\.plugins\org.eclipse.jdt.core
+2669330603.index
+432427418.index
+1865797976.index
+4215477937.index
+3062383343.index
+1578418888.index

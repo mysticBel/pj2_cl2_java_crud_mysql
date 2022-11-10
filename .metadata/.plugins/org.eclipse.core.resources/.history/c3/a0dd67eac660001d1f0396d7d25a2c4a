@@ -1,0 +1,7 @@
+package entidad;
+
+public class Equipo {
+	//Atributos privados
+	private int idequipo;
+	private String nombre;
+}

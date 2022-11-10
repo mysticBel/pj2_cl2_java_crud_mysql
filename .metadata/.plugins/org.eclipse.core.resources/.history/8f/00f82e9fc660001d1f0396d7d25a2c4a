@@ -1,0 +1,11 @@
+package entidad;
+
+public class Jugador {
+	private int idjugador;
+	private String nombre;
+	private String apellido;
+	private String dni;
+	private String fechaNacimiento;
+	private double sueldo;
+	private int idequipo;
+}

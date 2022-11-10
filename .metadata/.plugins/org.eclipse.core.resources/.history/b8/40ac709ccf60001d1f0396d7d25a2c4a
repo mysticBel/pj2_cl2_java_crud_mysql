@@ -1,0 +1,56 @@
+package mantenimiento;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import entidad.Jugador;
+import utils.MySQLConexion8;
+
+public class GestionJugadorDAO {
+	//Logica de Negocio
+	// REGISTRO -  INSERT
+	
+	public int registrarJugador(Jugador j) {
+		int res = 0;
+		Connection con = null; 
+		PreparedStatement pstm = null; 
+		try {
+			// PASO 1 :  Establecer la conexion a la BD, instancias de getConnection
+			con = MySQLConexion8.getConexion();
+			// PASO 2 : Registro ->Definir la instruccion SQL 
+			//		
+			String sql = "insert into tb_jugadores values ( ?, ?, ?, ?, ?, ?)";
+			// PASO 3 : Obtener los comandos QL -->Preparar la instruccion
+			pstm = con.prepareStatement(sql);
+			// PASO 4 : Obtener los parametros
+			pstm.setInt(1,  j.getIdjugador());
+			pstm.setString(2,  j.getNombre());
+			pstm.setString(3,  j.getApellido());
+			pstm.setString(4,  j.getDni());
+			pstm.setString(5,  j.getFechaNacimiento());
+			pstm.setDouble(6,  j.getSueldo());
+			pstm.setInt(7,  j.getIdequipo());
+			
+			// PASO 5 : ejecucion de la instruccion
+			res = pstm.executeUpdate();   //retorna int
+			
+		} catch (Exception e) {
+			System.out.println(">>>> Error en la instrucción del registro " + e.getMessage());
+		} finally {   //para cerrar la conexion por buenas prácticas
+			try {
+				if(pstm !=null) {
+					pstm.close();
+				}
+				if(con !=null) {
+					con.close();
+				}
+			} catch (SQLException e2) {  //importar
+				System.out.println(">>>> Error al cerrar la BD" + e2.getMessage());
+			}
+		}
+		
+		return res;
+	}
+	
+}
