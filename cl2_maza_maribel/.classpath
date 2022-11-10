@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="librerias/mysql-connector-java-8.0.22.jar"/>
 	<classpathentry kind="lib" path="librerias/JTattoo-1.6.11.jar"/>
 	<classpathentry kind="lib" path="librerias/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="librerias/substance-4.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -8,10 +8,15 @@
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="mantenimiento.GestionJugadorDAO"/>
     <fullyQualifiedTypeName name="mantenimiento.GestionEquipoDAO"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="entidad.Equipo"/>
     <fullyQualifiedTypeName name="utils.Alertas"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="entidad.Jugador"/>
+    <fullyQualifiedTypeName name="utils.Validaciones"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.text.ParseException"/>
+    <fullyQualifiedTypeName name="javax.swing.UIManager"/>
+    <fullyQualifiedTypeName name="org.jvnet.substance.SubstanceLookAndFeel"/>
 </qualifiedTypeNameHistroy>
